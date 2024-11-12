@@ -1,0 +1,58 @@
+.container{
+    display:grid;
+    border:1px solid gray;
+    grid-template-areas: "UNO DOS DOS TRES"
+                         "UNO CINCO SIETE CUATRO"
+                         "UNO OCHO SEIS CUATRO";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap:10px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.container div{
+    border:2px solid black;
+    color: white;
+    
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.uno{
+    background-color: green;
+    grid-area: UNO;
+}
+.dos{
+    background-color: green;
+    grid-area: DOS;
+}
+.tres{
+    background-color:red;
+    grid-area: TRES;
+}
+.cuatro{
+    background-color: green;
+    grid-area: CUATRO;
+}
+.cinco{
+    background-color: orange;
+    grid-area: CINCO;
+}
+.seis{
+    background-color: orange;
+    grid-area: SEIS;
+}
+.siete{
+    background-color: red;
+    grid-area: SIETE;
+}
+.ocho{
+    background-color: red;
+    grid-area: OCHO;
+}
